@@ -1,0 +1,11 @@
+{
+  "name": "ljh-request-limit",
+  "version": "1.0.0",
+  "description": "解决并发",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fendou_123",
+  "license": "ISC"
+}

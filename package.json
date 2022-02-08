@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fendou_123",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lijiahong123/ljh-request-limit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lijiahong123/ljh-request-limit/issues"
+  },
+  "homepage": "https://github.com/lijiahong123/ljh-request-limit/tree/master#readme"
 }

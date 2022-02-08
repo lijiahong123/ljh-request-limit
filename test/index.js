@@ -1,27 +1,9 @@
-var child_process = require("child_process");
 const requestLimit = require("ljh-request-limit");
 
 function request(url, arr) {
-  //   console.log(`${url}-----开始请求了`);
-  //   var curl = `curl ${url}`;
-  //   return new Promise((resolve, reject) => {
-  //     var child = child_process.exec(curl, function(err, stdout, stderr) {
-  //       if (err) {
-  //         console.log(`${url}-----请求出错了`);
-  //         reject(err);
-  //       } else {
-  //         console.log(`${url}-----请求成功了`);
-  //         resolve(stdout);
-  //       }
-  //     });
-  //   });
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      //   if (arr[url] % 2 === 0) {
       resolve(url);
-      //   } else {
-      //     reject(url);
-      //   }
     }, 3000);
   });
 }

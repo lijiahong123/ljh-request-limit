@@ -1,7 +1,8 @@
 {
   "name": "ljh-request-limit",
   "version": "1.0.0",
-  "description": "解决并发",
+  "description": "promise并发请求控制",
+  "keywords": ["promise并发","请求并发"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

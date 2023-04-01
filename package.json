@@ -1,13 +1,19 @@
 {
-  "name": "ljh-request-limit",
-  "version": "1.0.0",
-  "description": "promise并发请求控制",
-  "keywords": ["promise并发","请求并发"],
-  "main": "index.js",
+  "name": "mrli-utils",
+  "version": "0.0.1",
+  "description": "工具函数集合",
+  "keywords": [
+    "utils",
+    "工具集合",
+    "promise并发",
+    "请求并发"
+  ],
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config"
   },
-  "author": "fendou_123",
+  "type": "module",
+  "author": "1471363285@qq.com",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/lijiahong123/ljh-request-limit/issues"
   },
-  "homepage": "https://github.com/lijiahong123/ljh-request-limit/tree/master#readme"
+  "homepage": "https://github.com/lijiahong123/ljh-request-limit/tree/master#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.20.2"
+  }
 }

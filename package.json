@@ -1,11 +1,11 @@
 {
-  "name": "mrli-utils",
-  "version": "0.0.1",
-  "description": "工具函数集合",
+  "name": "asyncpool-js",
+  "version": "2.0.0",
+  "description": "异步请求并发控制函数，限制同一时间发起的请求量",
   "keywords": [
+    "控制promise并发",
     "utils",
-    "工具集合",
-    "promise并发",
+    "工具函数",
     "请求并发"
   ],
   "main": "dist/index.js",

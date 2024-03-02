@@ -8,11 +8,17 @@
     "工具函数",
     "请求并发"
   ],
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "umd": "./dist/index.umd.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "rollup --config"
+    "clean:dist": "rimraf dist",
+    "build:types": "npm run clean:dist && tsc -b ./tsconfig.types.json",
+    "build": "npm run build:types && rollup -c --bundleConfigAsCjs",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
   },
-  "type": "module",
   "author": "1471363285@qq.com",
   "license": "MIT",
   "repository": {
@@ -24,12 +30,16 @@
   },
   "homepage": "https://github.com/lijiahong123/ljh-request-limit/tree/master#readme",
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
-    "@rollup/plugin-babel": "^6.0.3",
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-runtime": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.0",
-    "rollup": "^3.20.2"
+    "rimraf": "^5.0.5",
+    "rollup": "^3.20.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.3.3"
   }
 }

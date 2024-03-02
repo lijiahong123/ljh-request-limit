@@ -1,5 +1,3 @@
-'use strict';
-
 function _arrayLikeToArray$1(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
   for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
@@ -513,4 +511,4 @@ function _asyncPool() {
   return _asyncPool.apply(this, arguments);
 }
 
-exports.asyncPool = asyncPool;
+export { asyncPool };
